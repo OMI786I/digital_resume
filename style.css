@@ -1,29 +1,167 @@
+/* General Styles */
 body {
-  font-family: sans-serif;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
   padding-left: 40px;
   padding-right: 40px;
 }
 
+h1,
+h4 {
+  color: #2c3e50;
+}
+
+/* Name and Title */
 .your-name h1 {
   text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
 }
+
 .your-title {
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #3498db;
   padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  color: #3498db;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
+
+/* Layout Grid */
 .holder {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 9px;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
-.holder-children-1 {
-  height: 100vh;
+.holder-children-1,
+.holder-children-2 {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Contact Section */
 .contact-parts {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-parts i {
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+.contact-parts p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Skills Section */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  color: black;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Education Section */
+h4 {
+  text-decoration: underline;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Project Section */
+.projects div {
+  margin-bottom: 20px;
+}
+
+.projects ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projects ul li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.projects p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.projects span {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.projects a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+section p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+.skills li {
+  background-color: #3498db;
+  color: white;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .holder {
+    grid-template-columns: 1fr;
+  }
+
+  .your-name h1 {
+    font-size: 2.5rem;
+  }
+
+  .your-title {
+    font-size: 1rem;
+  }
 }
