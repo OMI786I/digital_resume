@@ -1,8 +1,7 @@
 body {
   font-family: sans-serif;
-  padding: 10px;
-}
-.your-name {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .your-name h1 {
@@ -15,13 +14,12 @@ body {
 }
 .holder {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 9px;
 }
 
 .holder-children-1 {
-  grid-column: span 2;
-
   height: 100vh;
 }
 .contact-parts {
