@@ -24,3 +24,8 @@ body {
 
   height: 100vh;
 }
+.contact-parts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
