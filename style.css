@@ -1,11 +1,15 @@
 body {
-  font-family: monospace;
+  font-family: sans-serif;
   padding: 10px;
 }
 .your-name {
-  border: 2px solid black;
 }
 
 .your-name h1 {
   text-align: center;
+}
+.your-title {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
 }
